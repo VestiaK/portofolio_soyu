@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+*/
+
+.hero {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-h2 {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 700;
+  font-size: 5.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.flipbook {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.page {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.paper {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/images/paper-square.jpg");
+}
+
+.cover {
+  /* background-color: #9c45ce; */
+  background-image: url("../assets/images/cover-exam.jpeg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover h1 {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover p {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 10px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.back-cover {
+  background-color: #333;
+  color: white;
+}
+
+.page h2 {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page p {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.page ul {
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.page li {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.dialog {
+  background-image: url("../assets/images/vn-2.png");
+  color: white;
+  background-size: cover;
+  background-position: top;
+}
+
+.dialog-box {
+  background-image: url("../assets/images/dialog-box.png");
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.typingtext {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 300;
+  font-size: 1.9rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page1 {
+  background-image: url("../assets/images/book/COVER-01.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page2 {
+  background-image: url("../assets/images/book/COVER-02.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page3 {
+  background-image: url("../assets/images/book/1.png");
+  background-size: cover;
+  background-position: center;
+}
+.page4 {
+  background-image: url("../assets/images/book/2_new.png");
+  background-size: cover;
+  background-position: center;
+}
+.page5 {
+  background-image: url("../assets/images/book/3.png");
+  background-size: cover;
+  background-position: center;
+}
+.page6 {
+  background-image: url("../assets/images/book/4.png");
+  background-size: cover;
+  background-position: center;
+}
+/* Added 4.png twice here */
+.page7 {
+  background-image: url("../assets/images/book/rev-01.png");
+  background-size: cover;
+  background-position: center;
+}
+.page8 {
+  background-image: url("../assets/images/book/4.png");
+  background-size: cover;
+  background-position: center;
+}
+/* Adjusted subsequent pages to match original numbering */
+.page9 {
+  background-image: url("../assets/images/book/5.png");
+  background-size: cover;
+  background-position: center;
+}
+.page10 {
+  background-image: url("../assets/images/book/6.png");
+  background-size: cover;
+  background-position: center;
+}
+.page11 {
+  background-image: url("../assets/images/book/7.png");
+  background-size: cover;
+  background-position: center;
+}
+.page12 {
+  background-image: url("../assets/images/book/8.png");
+  background-size: cover;
+  background-position: center;
+}
+.page13 {
+  background-image: url("../assets/images/book/9.png");
+  background-size: cover;
+  background-position: center;
+}
+.page14 {
+  background-image: url("../assets/images/book/10.png");
+  background-size: cover;
+  background-position: center;
+}
+.page15 {
+  background-image: url("../assets/images/book/11.png");
+  background-size: cover;
+  background-position: center;
+}
+.page16 {
+  background-image: url("../assets/images/book/12.png");
+  background-size: cover;
+  background-position: center;
+}
+.page17 {
+  background-image: url("../assets/images/book/13.png");
+  background-size: cover;
+  background-position: center;
+}
+.page18 {
+  background-image: url("../assets/images/book/14.png");
+  background-size: cover;
+  background-position: center;
+}
+.page19 {
+  background-image: url("../assets/images/book/15.png");
+  background-size: cover;
+  background-position: center;
+}
+.page20 {
+  background-image: url("../assets/images/book/16.png");
+  background-size: cover;
+  background-position: center;
+}
+.page21 {
+  background-image: url("../assets/images/book/17.png");
+  background-size: cover;
+  background-position: center;
+}
+.page22 {
+  background-image: url("../assets/images/book/18.png");
+  background-size: cover;
+  background-position: center;
+}
+.page23 {
+  background-image: url("../assets/images/book/rev-02.png");
+  background-size: cover;
+  background-position: center;
+}
+.page24 {
+  background-image: url("../assets/images/book/19.png");
+  background-size: cover;
+  background-position: center;
+}
+.page25 {
+  background-image: url("../assets/images/book/20.png");
+  background-size: cover;
+  background-position: center;
+}
+.page26 {
+  background-image: url("../assets/images/book/21.png");
+  background-size: cover;
+  background-position: center;
+}
+.page27 {
+  background-image: url("../assets/images/book/22.png");
+  background-size: cover;
+  background-position: center;
+}
+.page28 {
+  background-image: url("../assets/images/book/23.png");
+  background-size: cover;
+  background-position: center;
+}
+.page29 {
+  background-image: url("../assets/images/book/24.png");
+  background-size: cover;
+  background-position: center;
+}
+.page30 {
+  background-image: url("../assets/images/book/25.png");
+  background-size: cover;
+  background-position: center;
+}
+.page31 {
+  background-image: url("../assets/images/book/26.png");
+  background-size: cover;
+  background-position: center;
+}
+.page32 {
+  background-image: url("../assets/images/book/27.png");
+  background-size: cover;
+  background-position: center;
+}
+.page33 {
+  background-image: url("../assets/images/book/28.png");
+  background-size: cover;
+  background-position: center;
+}
+.page34 {
+  background-image: url("../assets/images/book/29.png");
+  background-size: cover;
+  background-position: center;
+}
+.page35 {
+  background-image: url("../assets/images/book/30.png");
+  background-size: cover;
+  background-position: center;
+}
+.page36 {
+  background-image: url("../assets/images/book/31.png");
+  background-size: cover;
+  background-position: center;
+}
+.page37 {
+  background-image: url("../assets/images/book/rev-03.png");
+  background-size: cover;
+  background-position: center;
+}
+.page38 {
+  background-image: url("../assets/images/book/32.png");
+  background-size: cover;
+  background-position: center;
+}
+.page39 {
+  background-image: url("../assets/images/book/33.png");
+  background-size: cover;
+  background-position: center;
+}
+.page40 {
+  background-image: url("../assets/images/book/34.png");
+  background-size: cover;
+  background-position: center;
+}
+.page41 {
+  background-image: url("../assets/images/book/35.png");
+  background-size: cover;
+  background-position: center;
+}
+.page42 {
+  background-image: url("../assets/images/book/36.png");
+  background-size: cover;
+  background-position: center;
+}
+.page43 {
+  background-image: url("../assets/images/book/37.png");
+  background-size: cover;
+  background-position: center;
+}
+.page44 {
+  background-image: url("../assets/images/book/38.png");
+  background-size: cover;
+  background-position: center;
+}
+.page45 {
+  background-image: url("../assets/images/book/39.png");
+  background-size: cover;
+  background-position: center;
+}
+/* Removed duplicate .page45 */
+.page46 {
+  background-image: url("../assets/images/book/40.png");
+  background-size: cover;
+  background-position: center;
+}
+.page47 {
+  background-image: url("../assets/images/book/rev-04.png");
+  background-size: cover;
+  background-position: center;
+}
+.page48 {
+  background-image: url("../assets/images/book/42.png");
+  background-size: cover;
+  background-position: center;
+}
+.page49 {
+  background-image: url("../assets/images/book/COVER-02.png");
+  background-size: cover;
+  background-position: center;
+}
+.page50 {
+  background-image: url("../assets/images/book/COVER-02.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Untuk animasi modal */
+.modal-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.modal-exit {
+  opacity: 1;
+}
+.modal-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}

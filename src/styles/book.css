@@ -1,0 +1,94 @@
+/* styles.css */
+/* .book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+} */
+
+.flipbook {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.page {
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.paper {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/images/paper-square.jpg");
+}
+
+.cover {
+  /* background-color: #9c45ce; */
+  background-image: url("../assets/images/cover-exam.jpeg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover h1 {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover p {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 10px 0 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.back-cover {
+  background-color: #333;
+  color: white;
+}
+
+.page h2 {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page p {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.page ul {
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.page li {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
