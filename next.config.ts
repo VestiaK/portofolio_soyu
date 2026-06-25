@@ -2,7 +2,6 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   webpack: (config) => {
-    // Tambahkan rule untuk file audio
     config.module.rules.push({
       test: /\.(mp3)$/,
       use: [
